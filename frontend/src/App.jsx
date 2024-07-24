@@ -70,14 +70,15 @@ const handleComponentClick  =(text)=>{
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <header className="w-full py-4 flex justify-center items-center px-8">
+      <header className="w-full py-4 flex justify-center items-center px-8 ">
         <div className="text-xl font-bold">
           <img src={chatGptIcon} className="w-30 h-20" alt="ChatGPT Icon" />
         </div>
       </header>
       <div className="flex flex-col items-center mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div onClick={()=>handleComponentClick( "Python script for daily email reports")} className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+        <div className="flex gap-10">
+          <div className="" >
+          <div onClick={()=>handleComponentClick( "Python script for daily email reports")} className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer mb-10">
             <div className="flex justify-center">
               <SiAeroflot className="text-yellow-400 text-3xl" />
             </div>
@@ -89,7 +90,9 @@ const handleComponentClick  =(text)=>{
             </div>
             <p> Write a story in my favorite genre</p>
           </div>
-          <div onClick={()=>handleComponentClick( "Fun fact about the Roman Empire")} className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+          </div>
+          <div>
+          <div onClick={()=>handleComponentClick( "Fun fact about the Roman Empire")} className="bg-white p-6 rounded-lg shadow-md text-center cursor-pointer mb-10">
             <div className="flex justify-center">
               <RiShoppingBag3Line className="text-purple-400 text-3xl" />
             </div>
@@ -100,6 +103,7 @@ const handleComponentClick  =(text)=>{
               <IoPencil className="text-orange-400 text-3xl" />
             </div>
             <p> Explain superconductors</p>
+          </div>
           </div>
         </div>
       </div>
@@ -116,7 +120,7 @@ const handleComponentClick  =(text)=>{
         ))}
       </div>
       
-      <div className="flex  flex-col md:flex-row mt-auto mb-10 items-center  w-full px-4 ">
+      <div className="flex mt-auto mb-10 ">
   <div className="flex items-center mb-4 md:mb-0">
     {!mikeOn ? (
       <FaMicrophone
