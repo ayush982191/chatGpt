@@ -14,6 +14,7 @@ const App = () => {
   const [text, setText] = useState("");
   const [mikeOn, setMikeOn] = useState(false);
   const [sentMessages, setSentMessages] = useState([]);
+  
 // temp changes 
   const {
     transcript,
@@ -121,7 +122,7 @@ const handleComponentClick  =(text)=>{
       </div>
       
       <div className="flex mt-auto mb-10 ">
-  <div className="flex items-center mb-4 md:mb-0">
+  <div className="flex items-center mb-4 md:mb-0 fixed">
     {!mikeOn ? (
       <FaMicrophone
         onClick={handleMicrophoneOnClick}
