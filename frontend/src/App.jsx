@@ -14,7 +14,7 @@ const App = () => {
   const [text, setText] = useState("");
   const [mikeOn, setMikeOn] = useState(false);
   const [sentMessages, setSentMessages] = useState([]);
-
+// temp changes 
   const {
     transcript,
     listening,
@@ -115,26 +115,7 @@ const handleComponentClick  =(text)=>{
           </div>
         ))}
       </div>
-      {/* <div className="flex mt-auto mb-10 mr-2 items-center">
-        {!mikeOn ? (
-          <FaMicrophone onClick={handleMicrophoneOnClick} className="text-3xl cursor-pointer" />
-        ) : (
-          <img src={MicrophoneOn} onClick={handleMicrophoneOffClick} className="w-[10vw] h-[10vh]" alt="Microphone On" />
-        )}
-        <form onSubmit={handleSubmit} className="flex items-center gap-2">
-          <input
-            type="text"
-            onFocus={handleMicrophoneOffClick}
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            className="bg-green-50 w-[50vw] h-10"
-            placeholder="Message ChatGpt"
-          />
-          <button type="submit" className="text-3xl cursor-pointer hover:bg-gray-600">
-            <IoMdSend />
-          </button>
-        </form>
-      </div> */}
+      
       <div className="flex  flex-col md:flex-row mt-auto mb-10 items-center  w-full px-4 ">
   <div className="flex items-center mb-4 md:mb-0">
     {!mikeOn ? (
